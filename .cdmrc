@@ -1,0 +1,9 @@
+tabs: ['backend/server.js', 'README.md']
+terminal-one: |
+    cd backend
+    npm install
+    npm start
+terminal-two: |
+    cd frontend
+    npm install
+    npm start

@@ -1,0 +1,212 @@
+*{
+  padding: 0;
+  margin: 0;
+  
+}
+p{
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #f1f3f6;
+  min-height: 100vh;
+  color: black;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+.couponBox{
+  display: flex;
+  flex-direction: column;
+  background-color: #f4f4f4;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  height: 90vh;
+  width: 50%;
+  margin-top: 30px;
+  border-radius: 7px;
+  position: relative;
+}
+
+.couponNav{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 60px;
+  width: 100%;
+  padding-top: 5px;
+  background-color: #ffff;
+}
+
+.navItem{
+  /* background-color: #fd879f; */
+  width:20%;
+  height:50px;
+  margin-left: 50px;
+  margin-right: 50px;
+  color: black;
+  padding: 10px;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  background: none;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: large;
+}
+
+.underline{
+  background: #fd879f;
+  box-shadow: 1px 1px 1px 1px #0000005e;
+  color: white;
+}
+
+.addBtn{
+  background: #fd879f;
+  width:50px;
+  height:50px;
+  border-radius: 50%;
+  margin-right: 50px;
+  color: #ffff;
+  text-decoration: none;
+  border: none;
+  text-align: center;
+  cursor: pointer;
+  font-size: larger;
+  box-shadow: 1px 1px 1px 1px #0000005e;
+}
+
+
+.addCouponModal{
+  position: absolute;
+  top: 10px;
+  right: 8px;
+  display: flex;
+  flex-direction: column;
+
+  height: 450px;
+  width: 350px;
+  border-radius: 7px;
+  background: #ffff;
+  box-shadow: 2px 2px 5px 3px #0000005e;
+}
+
+.addCouponModal .close-btn{
+  background: none;
+  width:50px;
+  height:50px;
+  border-radius: 50%;
+  text-decoration: none;
+  border: none;
+  text-align: center;
+  cursor: pointer;
+  font-size: larger;
+  color: #fd879f;
+  float: left;
+  position: absolute;
+  right: 0;
+}
+
+.addCouponModal .close-btn:hover{
+  background: #fd879f2c;
+}
+
+
+.addCouponModal form{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  padding-top: 20px;
+  /* border: 2px solid red; */
+  margin-top: 50px;
+}
+
+.addCouponModal form input{
+  width: 90%;
+  height: 50px;
+  /* margin-top: 15px; */
+  padding-left: 10px;
+  font-size: large;
+  font-weight: bold;
+  border: none;
+  border-bottom: 1px solid #fd879f;
+  outline:none;
+}
+
+.addCouponModal form input:focus{
+  border-bottom: 2px solid #fd879f;
+}
+
+.addCouponModal form label{
+  font-size: large;
+  font-weight: bold;
+  margin-top: 5px;
+  margin-right: 210px;
+  color: rgba(0, 0, 0, 0.582);
+  float: left;
+}
+
+.addCouponModal form button{
+  background: #fd879f;
+  width: 90%;
+  height: 50px;
+  border-radius: 7px;
+  color: #ffff;
+  text-decoration: none;
+  border: none;
+  text-align: center;
+  cursor: pointer;
+  font-size: large;
+  font-weight: bold;
+  box-shadow: 1px 1px 1px 1px #0000005e;
+}
+
+
+.addCouponModal form button:hover{
+  background: rgba(253, 135, 159, 0.575)
+}
+
+
+.message{
+  position: absolute;
+  left: 25%;
+  right: 25%;
+}
+
+.center{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
