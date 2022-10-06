@@ -1,5 +1,7 @@
 const mongoose = require('mongoose');
 
+
+// Add more attributes like brand, rating average, created_at etc.
 const productSchema = new mongoose.Schema({
     title: {
         type: String,
@@ -19,21 +21,6 @@ const productSchema = new mongoose.Schema({
     category: {
         type: mongoose.Schema.Types.ObjectId,
         ref: 'Category',
-    },
-    brand:{
-        type: String
-    },
-    rating: {
-        type: Number,
-    },
-    ratingCount: {
-        type: Number,
-    },
-    ratingAverage: {
-        type: Number,
-    },
-    createdAt: {
-        type: Date,
     }
 })
 
