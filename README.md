@@ -7,7 +7,7 @@
 - User can Apply filters like Brands, Customer Rating and Disscounts.
 - Diffrent Categories of Products.
 - Sort Products by Prices (low-to-hight or high-to-low).
-- Include Pagination.
+- Include Paginations.
 
 ### Screen Shots
 
